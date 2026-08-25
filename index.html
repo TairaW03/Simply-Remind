@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legal Deadline Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>T'aira's Deadline Calculator</h2>
+    <p class="subtitle"></p>
+
+    <div class="input-group">
+      <label for="startDate">Enter Date:</label>
+      <input type="date" id="startDate">
+    </div>
+
+    <div class="input-group">
+      <label>Calculation Direction:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="direction" value="add" checked> Forward (Add Days)</label>
+        <label><input type="radio" name="direction" value="subtract"> Backward (Subtract Days)</label>
+      </div>
+    </div>
+
+    <table id="resultsTable">
+      <thead>
+        <tr>
+          <th>Notice Period</th>
+          <th>Calendar Date</th>
+          <th>Day of Week</th>
+        </tr>
+      </thead>
+      <tbody id="resultsBody">
+        <tr>
+          <td colspan="3" class="placeholder">Select a date above to calculate deadlines.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
